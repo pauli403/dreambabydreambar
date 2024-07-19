@@ -1,0 +1,39 @@
+.Logo a{
+  text-decoration: none;
+}
+.Logo a:hover{
+  color: var(--white);
+}
+.Logo img{
+  width: 400px;
+  height: auto;
+}
+.Logo{
+    position: absolute;
+    left: 50svw;
+    top: 50svh;
+    transform: translate(-50%, -50%);
+  }
+  h1{
+    display: none;
+  }
+
+  .Logo.icon{
+    top: 40px;
+    transform: translate(-50%, 0);
+  }
+  .Logo.icon img{
+    width: 100px;
+    height: auto;
+  }
+  @media (max-width: 920px){
+    .Logo img{
+      width: 100%;
+      height: auto;
+    }
+    .Logo:not(.icon){
+      width: 70%;
+    }
+  }
+
+

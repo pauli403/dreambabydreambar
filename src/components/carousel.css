@@ -1,0 +1,70 @@
+.Slider-Container{
+    position: relative;
+    height: 491px;
+    margin: 0 0 50px 0;
+    width: 100%;
+}
+
+.CarouselItem{
+    border-radius: 8px;
+    background-color: rgb(var(--dark-grey));
+    margin: 0 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 48px 24px;
+    height: 264px;
+
+    position: relative;
+    top: 60px;
+    transition: top 0.5s ease, height 0.5s ease;
+}
+
+.CarouselItem.active{
+    height: 395px;
+    top: 0;
+}
+
+.CarouselItem img{
+    height: 205px;
+    width: 100%;
+    object-fit: cover;
+    filter: saturate(0);
+    transition: filter 0.5s ease;
+    border-radius: 8px;
+}
+
+button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+
+.CarouselItem.active img{
+    filter:saturate(1);
+    
+}
+.Extender{
+    overflow: hidden;
+    height: 0;
+    color: transparent;
+    transition: color 0.1s step-end;
+}
+
+.active .Extender{
+    height: auto;
+    color: inherit;
+}
+
+.CarouselItem h2{
+    text-align: left;
+}
+
+@media (max-width: 920px){
+    .Arrow{
+        display: none;
+    }
+}

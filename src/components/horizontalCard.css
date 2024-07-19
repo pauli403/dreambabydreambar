@@ -1,0 +1,46 @@
+
+
+.Text-Content{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    margin:96px 0;
+    max-width: 600px;
+}
+
+.Other-Content{
+    grid-column-start: 7;
+    grid-column-end: 12;
+    margin:96px 0;
+    overflow:hidden;
+    max-width: 600px;
+}
+.Other-Content>div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.Text-Content.variant{
+    grid-column-start: 7;
+    grid-column-end: 12;
+}
+.Other-Content.variant{
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+.Other-Content img{
+    filter: saturate(0);
+    height: 343px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 920px){
+    .Text-Content, .Text-Content.variant, .Other-Content, .Other-Content.variant{
+        width: 100%;
+        margin: 16px 0 ;
+    }
+
+    
+  }

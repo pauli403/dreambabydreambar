@@ -1,0 +1,27 @@
+.Footer{
+    
+    border-top: 1px solid rgb(var(--dark-grey));
+}
+
+.Footer>div{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    max-width: 1152px;
+    margin: auto;
+}
+
+@media (max-width: 920px) {
+    .Footer>div{
+        flex-direction: column;
+        margin: 30px;
+        align-items: center;
+    }
+    .Footer>div>a {
+        margin: 10px 0 0 0 ;
+    }
+    .Footer p{
+        margin: 10px 0 0 0 ;
+        text-align: center;
+    }
+}

@@ -1,0 +1,12 @@
+.drinks-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 220px;
+    align-items: center;
+}
+
+@media (max-width: 920px){
+    .drinks-grid{
+        grid-template-columns: 1fr;
+    }    
+}

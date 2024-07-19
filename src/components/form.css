@@ -1,0 +1,36 @@
+form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-self: center;
+
+}
+.FormInput, .wpcf7-form-control{
+    padding: 16px 24px;
+    background: transparent;
+    color: inherit;
+    margin: 10px 0;
+    border: 1px solid rgb(var(--dark-grey));
+    border-radius: 8px;
+    max-width: 100%;
+}
+.FormInput:hover,.wpcf7-form-control:not(.wpcf7-submit):hover{
+    border-color:rgb(var(--highlight));
+}
+
+.FormInput:active, .FormInput:focus,.wpcf7-form-control:not(.wpcf7-submit):active, .wpcf7-form-control:not(.wpcf7-submit):focus{
+    border-color:rgb(var(--highlight));
+    outline: none;
+    background-color: rgb(var(--dark-grey));
+}
+
+input{
+    outline: none;
+    border: none;
+}
+textarea{
+    min-height: 5em;
+}
+form p{
+    margin: 0;
+}
